@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #000235;
+    --secondary-color: #888DFF;
+    --secondary-highlight-color: #5960FF;
+    --text-light-purple: #E5E7FF; /*sobrepor roxo escuro */
+    --text-dark-purple: #000235;
+    --title-size: 4rem;
+    --subtitle-size: 1.5rem;
+}
+
+.hide {
+    display: none;
+}

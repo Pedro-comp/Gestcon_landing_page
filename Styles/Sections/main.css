@@ -1,0 +1,55 @@
+.section-main {
+    display: grid;
+    justify-items: center;
+}
+
+.background-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.texto-principal {
+    text-align: center;
+    margin: 10% 18% 0 18%;
+    font-size: 3.75rem;
+    line-height: 76px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0px 4px 5px rgba(0,0,0,0.25);
+}
+
+.main-button {
+    z-index: 10;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 18.438rem;
+    height: 4.125rem;
+    border-radius: 7px;
+    margin-top: 3%;
+    background-color: var(--primary-color);
+}
+
+.main-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-dark-purple);
+}
+
+.main-button img {
+    margin-left: 5px;
+    text-align: center;
+}
+
+.print-tela-main {
+    z-index: 1;
+    /* width: 81.75756rem; */
+    width: 80%;
+    margin-top: -7%;
+}
