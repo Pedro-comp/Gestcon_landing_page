@@ -1,0 +1,117 @@
+.section-funcionalidades {
+    margin-top: -4%;
+}
+.funcionalidades-title {
+    display: inline-flex;
+    /* display: inline-block; */
+    width: 100%;
+    font-size: var(--title-size);
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+    /* margin-bottom: 3%; */
+}
+
+.funcionalidades-title h1 {
+    align-self: center;
+}
+
+.funcionalidades-title h1 span {
+    color: var(--secondary-highlight-color);
+}
+
+.spark-icon {
+    /* position: fixed; */
+    /* position: static; */
+    position: sticky;
+    z-index: 20;
+    margin-bottom: 40px;
+    margin-left: -60px;
+    top: 1200px;
+    right: 60px;
+}
+
+.funcionalidades-subtitle {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: var(--subtitle-size);
+    line-height: 120%;
+    text-align: center;
+    margin: 0 7rem;
+    margin-top: -3rem;
+}
+
+.funcionalidades-cards {
+    margin: 0 8rem;
+    margin-top: 2rem;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 2.2rem 0;
+    color: var(--primary-color);
+    justify-content: center;
+    justify-items: center;
+}
+
+.funcionalidades-card {
+    padding: 3rem 2rem;
+    width: 85%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+}
+
+.icon-div {
+    display: inline-flex;
+    font-size: 1.7rem;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+.icon-div h2 {
+    margin-left: 1rem;
+}
+
+.funcionalidades-card p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.4rem;
+    line-height: 120%;
+    margin: 1.5rem 0;
+    width: 80%;
+}
+
+.saiba-mais-div {
+    display: inline-flex;
+    justify-items: center;
+}
+
+.saiba-mais-div a {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.saiba-mais-div a:hover {
+    color: var(--secondary-highlight-color);
+}
+
+.saiba-mais-div img {
+    margin-left: 2px;
+}
+
+@media (max-width: 965px) {
+    .spark-icon {
+        display: none;
+    }
+
+    .funcionalidades-subtitle {
+        margin-top: 0;
+    }
+}
