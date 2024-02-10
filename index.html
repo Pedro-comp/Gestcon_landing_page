@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS LINKS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- SECTIONS CSS LINKS -->
     <link rel="stylesheet" href="./Styles/reset.css">
     <link rel="stylesheet" href="./Styles/components.css">
-    <link rel="stylesheet" href="./Styles/Sections/header.css">
-    <link rel="stylesheet" href="/Styles/Sections/main.css">
-    <link rel="stylesheet" href="./Styles/Sections/funcionalidades.css">
-    <link rel="stylesheet" href="./Styles/Sections/sobre-nos.css">
-    <link rel="stylesheet" href="/Styles/Sections/frase.css">
-    <link rel="stylesheet" href="./Styles/Sections/contatos.css">
-    <link rel="stylesheet" href="./Styles/Sections/planos.css">
-    <link rel="stylesheet" href="./Styles/Sections/footer.css">
+    <link rel="stylesheet" href="./Styles/Sections/import.css">
+    <!-- SCRIPTS LINKS -->
+    <script defer src="/Scripts/header_script.js"></script>
     <title>Gestcon - Gestão de Contratos</title>
 </head> 
 <body>
     <header>
-        <img class="logo-gestcon" src="/Assets/images/logo-gestcon.png" alt="logo gestcon">
-        <img class="hide" src="/Assets/images/logo-gestcon.png" alt="logo-gestcon">
-        <img class="hide" src="/Assets/images/nome-gestcon-mobile.png" alt="">
-        <nav>
+        <img id="logo-gestcon" class="logo-gestcon" src="/Assets/images/logo-gestcon.png" alt="logo gestcon">
+        <img id="logo-gestcon-mobile" src="/Assets/images/logo-gestcon-mobile.png" alt="logo-gestcon">
+        <img id="nome-gestcon-mobile" src="/Assets/images/nome-gestcon-mobile.png" alt="">
+        <nav id="nav-header-menu">
             <ul class="header-list">
                 <li>Funcionalidades</li>
                 <li>Sobre Nós</li>
@@ -32,7 +29,16 @@
             </ul>
         </nav>
         <div class="button-container">
-            <a href="/">Entrar</a>
+            <a id="entrar-button" href="/">Entrar</a>
+            <img id="menu-icon" src="/Assets/icones-svg/menu.svg" alt="icone do menu" onclick="openNav()">
+        </div>
+
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="fecharbtn" onclick="closeNav()">&times;</a>
+            <a href="#">Funcionalidades</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+            <a href="#">Planos</a>
         </div>
     </header>
     <section class="section-main">
@@ -45,6 +51,7 @@
         </a>
         <img class="background-img" src="Assets/images/background-main.jpg" alt="plano de fundo">
         <img class="print-tela-main" src="Assets/images/img-main.png" alt="Imagem sistema gestcon">
+        <img class="print-tela-mobile" src="Assets/images/print-tela-mobile.png" alt="imagem do sistema">
     </section>
     <section class="section-funcionalidades">
         <div class="funcionalidades-title">

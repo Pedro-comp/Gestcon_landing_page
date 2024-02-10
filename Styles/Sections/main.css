@@ -53,3 +53,40 @@
     width: 80%;
     margin-top: -7%;
 }
+
+@media (max-width: 440px) {
+    .background-img {
+        height: 60%;
+    }
+
+    .texto-principal {
+        margin-top: 5rem;
+        font-size: 2rem;
+        line-height: 120%;
+        text-align: left;
+        margin-left: 0;
+        margin: 5rem 1rem 0.5rem 1rem;
+        font-weight: 500;
+    }
+
+    .main-button {
+        justify-self: left;
+        margin-left: 1rem; 
+        width: 200px;
+        height: 43.43px; 
+        font-size: 1.2em;
+    }
+
+    .main-button img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .print-tela-main {
+        display: none;
+    }
+
+    /* .print-tela-mobile {
+
+    } */
+}
