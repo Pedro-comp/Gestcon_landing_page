@@ -10,7 +10,7 @@ header {
     z-index: 10;
 }
 
-header a {
+#entrar-button {
     display: inline-flex;
     width: 7rem;
     height: 3.5rem;
@@ -23,7 +23,7 @@ header a {
     color: var(--text-light-purple);
 }
 
-header a:hover {
+#entrar-button:hover {
     background-color: var(--secondary-color);
     color: var(--text-dark-purple);
 }
@@ -48,7 +48,6 @@ nav {
 
 .header-list li {
     cursor: pointer;
-    /* margin: 0 0.01rem; */
     text-align: center;
     line-height: 150%;
     text-shadow: 1px 4px 10px rgba(0,0,0,0.3);
@@ -56,7 +55,6 @@ nav {
 }
 
 .header-list li:hover {
-    /* color: #c0c0c0; */
     text-shadow: 0px 5px 10px rgba(0,0,0,0.7);
 }
 
@@ -66,6 +64,62 @@ nav {
     margin-left: 1rem;
 }
 
-@media (max-width: 380px) {
-    
+.sidenav {
+    height: 100%;
+    width: 18rem;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    -webkit-box-shadow: -3px 0px 11px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -3px 0px 11px 0px rgba(0,0,0,0.1);
+    box-shadow: -3px 0px 11px 0px rgba(0,0,0,0.1);
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .fecharbtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+@media (max-width: 440px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    #logo-gestcon-mobile {
+        margin-left: 1rem;
+        justify-self: left;
+    }
+
+    .button-container {
+        margin-right: 1rem;
+        justify-self: right;
+    }
+
+    #entrar-button {
+        width: min-content;
+        height: min-content;
+        width: 0;
+        height: 1rem;
+    }
 }
