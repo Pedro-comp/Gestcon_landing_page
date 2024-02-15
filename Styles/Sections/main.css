@@ -86,7 +86,9 @@
         display: none;
     }
 
-    /* .print-tela-mobile {
-
-    } */
+    .print-tela-mobile {
+        display: flex;
+        justify-self: right;
+        margin-top: 1rem;   
+    }
 }
