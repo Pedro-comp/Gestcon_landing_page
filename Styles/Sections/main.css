@@ -54,6 +54,10 @@
     margin-top: -7%;
 }
 
+.print-tela-mobile {
+    display: none;
+}
+
 @media (max-width: 440px) {
     .background-img {
         height: 60%;

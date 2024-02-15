@@ -18,7 +18,7 @@
     align-self: center;
 }
 
-.funcionalidades-title h1 span {
+.funcionalidades-title h1 span:first-child {
     color: var(--secondary-highlight-color);
 }
 
@@ -42,6 +42,10 @@
     text-align: center;
     margin: 0 7rem;
     margin-top: -3rem;
+}
+
+.funcionalidades-subtitle-mobile {
+    display: none;
 }
 
 .funcionalidades-cards {
@@ -106,6 +110,10 @@
     margin-left: 2px;
 }
 
+.funcionalidades-slide {
+    display: none;
+}
+
 @media (max-width: 965px) {
     .spark-icon {
         display: none;
@@ -114,4 +122,34 @@
     .funcionalidades-subtitle {
         margin-top: 0;
     }
+
+    .funcionalidades-title .spark-icon {
+        display: none;
+    }
+
+    .funcionalidades-title {
+        font-size: var(--mobile-title-size);
+        text-align: left;
+        margin-left: 1rem;
+        font-weight: 500;
+    }
+
+    .funcionalidades-subtitle {
+        display: none;
+    }
+
+    .funcionalidades-subtitle-mobile {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 400;
+        display: block;
+        margin-left: 1rem;
+        font-size: var(--mobile-subtitle-size);
+        line-height: 120%;
+        margin-top: 0.5rem;
+    }
+
+    .funcionalidades-cards {
+        display: none;
+    }
+
 }
