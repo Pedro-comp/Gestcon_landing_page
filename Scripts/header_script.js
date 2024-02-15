@@ -1,4 +1,3 @@
-
 const aplicar_estilos = () => {
     const largura_tela = window.matchMedia('(max-width: 440px)')
 

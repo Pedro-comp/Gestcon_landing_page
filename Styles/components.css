@@ -6,6 +6,9 @@
     --text-dark-purple: #000235;
     --title-size: 4rem;
     --subtitle-size: 1.5rem;
+    --mobile-title-size: 2rem;
+    --mobile-subtitle-size: 1.1rem;
+    --mobile-weight-title: 500;
 }
 
 .hide {
