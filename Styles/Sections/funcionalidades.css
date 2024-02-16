@@ -114,6 +114,12 @@
     display: none;
 }
 
+.swiper {
+    width: 600px;
+    height: 300px;
+    border: 2px solid red;
+}
+
 @media (max-width: 965px) {
     .spark-icon {
         display: none;
