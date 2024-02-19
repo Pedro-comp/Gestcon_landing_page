@@ -7,23 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- SPLIDEJS CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <!-- CSS LINKS -->
     <!-- <link rel="stylesheet" href="path/to/swiper.min.css"> -->
-    <link rel="stylesheet" href="./node_modules/swiper/swiper.min.css">
     <link rel="stylesheet" href="./Styles/reset.css">
     <link rel="stylesheet" href="./Styles/components.css">
     <link rel="stylesheet" href="./Styles/Sections/import.css">
     <!-- SCRIPTS LINKS -->
-    <script src="./node_modules/swiper/swiper.min.js"></script>
     <script defer src="./Scripts/header_script.js"></script>
-    <script defer type="module" src="./Scripts/swiper_script.js"></script>
+    
     <title>Gestcon - Gestão de Contratos</title>
 </head> 
 <body>
     <header>
-        <img id="logo-gestcon" class="logo-gestcon" src="/Assets/images/logo-gestcon.png" alt="logo gestcon">
-        <img id="logo-gestcon-mobile" src="/Assets/images/logo-gestcon-mobile.png" alt="logo-gestcon">
-        <img id="nome-gestcon-mobile" src="/Assets/images/nome-gestcon-mobile.png" alt="">
+        <img id="logo-gestcon" class="logo-gestcon" src="./Assets/images/logo-gestcon.png" alt="logo gestcon">
+        <img id="logo-gestcon-mobile" src="./Assets/images/logo-gestcon-mobile.png" alt="logo-gestcon">
+        <img id="nome-gestcon-mobile" src="./Assets/images/nome-gestcon-mobile.png" alt="">
         <nav id="nav-header-menu">
             <ul class="header-list">
                 <li>Funcionalidades</li>
@@ -34,7 +36,7 @@
         </nav>
         <div class="button-container">
             <a id="entrar-button" href="/">Entrar</a>
-            <img id="menu-icon" src="/Assets/icones-svg/menu.svg" alt="icone do menu" onclick="openNav()">
+            <img id="menu-icon" src="./Assets/icones-svg/menu.svg" alt="icone do menu" onclick="openNav()">
         </div>
 
         <div id="sidenav" class="sidenav">
@@ -53,9 +55,9 @@
             <p>Entre em contato</p>
             <img src="./Assets/icones-svg/arrow-up-right.svg">
         </a>
-        <img class="background-img" src="Assets/images/background-main.jpg" alt="plano de fundo">
-        <img class="print-tela-main" src="Assets/images/img-main.png" alt="Imagem sistema gestcon">
-        <img class="print-tela-mobile" src="Assets/images/print-tela-mobile.png" alt="imagem do sistema">
+        <img class="background-img" src="./Assets/images/background-main.jpg" alt="plano de fundo">
+        <img class="print-tela-main" src="./Assets/images/img-main.png" alt="Imagem sistema gestcon">
+        <img class="print-tela-mobile" src="./Assets/images/print-tela-mobile.png" alt="imagem do sistema">
     </section>
     <section class="section-funcionalidades">
         <div class="funcionalidades-title">
@@ -122,18 +124,110 @@
                 </div>
             </div>
         </div>
-        <div class="funcionalidades-slider">
+        <!-- <div class="funcionalidades-slider">
             <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">
+                        <h1>Gráficos Interativos</h1>
+                        <p>
+                            Obtenha insights instantâneos com os gráficos interativos do Gestcon, proporcionando uma análise de dados dinâmica e eficiente.
+                        </p>
+                        <div>
+                            <a>Saiba mais</a>
+                            <img src="./Assets/icones-svg/seta-cima.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Importação de arquivos</h1>
+                        <p>
+                            Simplifique o processo com a importação de arquivos no Gestcon. Agilize a entrada de dados e ganhe tempo para focar no que realmente importa.
+                        </p>
+                        <div>
+                            <a>Saiba mais</a>
+                            <img src="./Assets/icones-svg/seta-cima.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Criação de documentos</h1>
+                        <p>
+                            Simplesmente assine. O Gestcon oferece documentos jurídicos prontos para agilizar o processo. Eficiência em cada assinatura.
+                        </p>
+                        <div>
+                            <a>Saiba mais</a>
+                            <img src="./Assets/icones-svg/seta-cima.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Panorama financeiro</h1>
+                        <p>
+                            Obtenha clareza instantânea com o panorama financeiro do Gestcon. Informações rápidas para uma gestão financeira eficaz.
+                        </p>
+                        <div>
+                            <a>Saiba mais</a>
+                            <img src="./Assets/icones-svg/seta-cima.svg" alt="" srcset="">
+                        </div>
+                    </div>
                 </div>              
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+              </div>
+        </div> -->
+        <div class="funcionalidades-slider">
+            <div class="splide" role="group" aria-label="Splide Basic">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                            <li class="splide__slide">
+                            <div class="icon-div">
+                                <img class="icon-card" src="Assets/icones-svg/grafico-pizza.svg" alt="">
+                                <h2>Gráficos interativos</h2>
+                            </div>
+                            <p>
+                                Obtenha insights instantâneos com os gráficos interativos do Gestcon, proporcionando uma análise de dados dinâmica e eficiente.
+                            </p>
+                            <div class="saiba-mais-div">
+                                <a href="/">Saiba mais</a>
+                                <img src="Assets/icones-svg/seta-cima.svg" alt="">
+                            </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="icon-div">
+                                    <img class="icon-card" src="Assets/icones-svg/import.svg" alt="">
+                                    <h2>Importações de arquivo</h2>
+                                </div>
+                                <p>
+                                    Simplifique o processo com a importação de arquivos no Gestcon. Agilize a entrada de dados e ganhe tempo para focar no que realmente importa.
+                                </p>
+                                <div class="saiba-mais-div">
+                                    <a href="/">Saiba mais</a>
+                                    <img src="Assets/icones-svg/seta-cima.svg" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="icon-div">
+                                    <img class="icon-card" src="Assets/icones-svg/arquivo-mais.svg" alt="">
+                                    <h2>Criação de documentos</h2>
+                                </div>
+                                <p>
+                                    Simplesmente assine. O Gestcon oferece documentos jurídicos prontos para agilizar o processo. Eficiência em cada assinatura.
+                                </p>
+                                <div class="saiba-mais-div">
+                                    <a href="/">Saiba mais</a>
+                                    <img src="Assets/icones-svg/seta-cima.svg" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="icon-div">
+                                    <img class="icon-card" src="Assets/icones-svg/dollar.svg" alt="">
+                                    <h2>Panorama financeiro</h2>
+                                </div>
+                                <p>
+                                    Obtenha clareza instantânea com o panorama financeiro do Gestcon. Informações rápidas para uma gestão financeira eficaz.
+                                </p>
+                                <div class="saiba-mais-div">
+                                    <a href="/">Saiba mais</a>
+                                    <img src="Assets/icones-svg/seta-cima.svg" alt="">
+                                </div>
+                            </li>
+                      </ul>
+                </div>
               </div>
         </div>
     </section>
@@ -144,20 +238,24 @@
                 <p>
                     A CodeCrafts é uma equipe apaixonada e dedicada, especializada em desenvolver soluções tecnológicas inovadoras, com destaque para o Gestcon - nosso avançado sistema de gestão de contratos que simplifica e aprimora processos empresariais. Cada membro da nossa equipe contribui com habilidades técnicas excepcionais, resultando em ferramentas como o Gestcon, que expressam nosso compromisso em fornecer soluções inteligentes e intuitivas. Estamos aqui para impulsionar a eficiência e transformar a gestão de contratos, sempre focados em proporcionar uma experiência única aos nossos clientes.
                 </p>
+                <p class="texto-sobre-nos-mobile">
+                    A CodeCrafts é uma equipe apaixonada e dedicada, especializada em desenvolver soluções tecnológicas inovadoras. Nosso trabalho ganha vida no Gestcon, um sistema avançado de gestão de contratos que simplifica e aprimora os processos empresariais.
+                </p>
+                <img class="img-sobre-nos-mobile" src="./Assets/images/img-sobrenos-mobile.jpg" alt="tela do sistema gestcon">
                 <a href="/">
                     Entre em contato
                 </a>
             </div>
             <div class="right-container">
                 <div class="sobre-nos-img">
-                    <!-- <img src="Assets/images/img-sobrenos.png" alt="imagem do sistema na área de contratos"> -->
+                    <img src="Assets/images/img-sobrenos.png" alt="imagem do sistema na área de contratos">
                 </div>
             </div>
         </div>
     </section>
     <section class="section-frase">
         <h1>Gestcon: Elevando a gestão de contratos para novos patamares. Descomplique, inove, alcance o sucesso empresarial.</h1>
-        <img src="Assets/images/logo-gestcon-cinza.png" alt="logo gestcon">
+        <img src="./Assets/images/logo-gestcon-cinza.png" alt="logo gestcon">
     </section>
     <section class="section-contatos">
         <div class="contato-form-div">
@@ -274,5 +372,21 @@
     <footer>
         <p>Pedro Augusto Noleto muito foda</p>
     </footer>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide', {
+                classes: {
+                    pagination: 'splide__pagination pagination-div',
+                    page: 'splide__pagination__page pagination-dot'
+                },
+                type: 'loop',
+                perPage: 1,
+                height: '300px',
+                gap: 12,
+                arrows: false,
+            } );
+            splide.mount();
+        } );
+    </script>
 </body>
 </html>

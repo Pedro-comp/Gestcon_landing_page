@@ -116,3 +116,38 @@
     color: #fff;
     border: 2px solid #fff;
 }
+
+@media (max-width: 440px) {
+    .section-contatos {
+        grid-template-columns: 1fr;
+        height: 50rem;
+        padding: 0 1rem;
+    }
+
+    .contatos-div {
+        margin-left: 0;
+    }
+
+    .contato-form-div p {
+        font-size: var(--mobile-title-size);
+        font-weight: 500;
+        line-height: 115%;
+    }
+
+    .contato-form {
+        margin: 0;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .contatos-div {
+        margin: 0;
+    }
+
+    .contatos-div h2 {
+        font-size: var(--mobile-title-size);
+        font-weight: 500;
+    }
+}

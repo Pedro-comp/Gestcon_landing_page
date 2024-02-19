@@ -1,9 +1,9 @@
 .section-funcionalidades {
     margin-top: -4%;
 }
+
 .funcionalidades-title {
     display: inline-flex;
-    /* display: inline-block; */
     width: 100%;
     font-size: var(--title-size);
     line-height: 120%;
@@ -18,13 +18,11 @@
     align-self: center;
 }
 
-.funcionalidades-title h1 span:first-child {
+.funcionalidades-title h1 span {
     color: var(--secondary-highlight-color);
 }
 
 .spark-icon {
-    /* position: fixed; */
-    /* position: static; */
     position: sticky;
     z-index: 20;
     margin-bottom: 40px;
@@ -110,23 +108,74 @@
     margin-left: 2px;
 }
 
-.funcionalidades-slide {
+.funcionalidades-slider {
     display: none;
 }
 
-.swiper {
-    width: 600px;
-    height: 300px;
-    border: 2px solid red;
+.splide__track {
+    padding: 2rem;
+}
+
+.splide__slide {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.15);
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.15);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination-dot:is(.is-active) {
+    background-color: var(--primary-color);
+}
+
+.splide__slide .icon-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.splide__slide .icon-div img {
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.splide__slide .icon-div h2 {
+    text-align: center;
+    line-height: 110%;
+    padding: 0;
+}
+
+.splide__slide p {
+    text-align: center;
+    margin: 1rem;
+    flex: 1;
+}
+
+.splide__slide .saiba-mais-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 965px) {
     .spark-icon {
         display: none;
     }
+}
 
-    .funcionalidades-subtitle {
-        margin-top: 0;
+@media (max-width: 440px) {
+    .section-funcionalidades {
+        margin-top: 1rem;
     }
 
     .funcionalidades-title .spark-icon {
@@ -138,6 +187,7 @@
         text-align: left;
         margin-left: 1rem;
         font-weight: 500;
+        width: 90%;
     }
 
     .funcionalidades-subtitle {
@@ -156,6 +206,14 @@
 
     .funcionalidades-cards {
         display: none;
+        margin: 0 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+        gap: 2rem;
     }
 
+    .funcionalidades-slider {
+        display: block;
+    }
 }

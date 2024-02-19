@@ -7,7 +7,7 @@
     text-align: center;
     font-size: var(--title-size);
     font-weight: 600;
-    color: #000;
+    color: var(--primary-color);
     margin-bottom: 2rem;
 }
 
@@ -118,4 +118,28 @@
 
 .outros-planos span:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 440px) {
+    .section-planos {
+        margin: 4rem 1rem;
+    }
+
+    .section-planos h1 {
+        text-align: left;
+        font-size: var(--mobile-title-size);
+    }
+
+    .planos-cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .card-title {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title div:last-child {
+        display: none;
+    }
 }

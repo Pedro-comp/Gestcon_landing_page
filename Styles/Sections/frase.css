@@ -15,7 +15,8 @@
     margin-bottom: 1.3rem;
 }
 
-/* .section-frase img {
-    margin-top: 1rem;
-    display: flex;
-} */
+@media (max-width: 440px){
+    .section-frase {
+        display: none;
+    }
+}

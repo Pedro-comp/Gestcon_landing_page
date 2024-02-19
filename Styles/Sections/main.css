@@ -74,6 +74,7 @@
     }
 
     .main-button {
+        z-index: 1;
         justify-self: left;
         margin-left: 1rem; 
         width: 200px;
