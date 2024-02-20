@@ -56,21 +56,22 @@
 }
 
 .right-container {
-    width: 100%;
+    width: fit-content;
+    display: flex;
+    justify-self: end;
 }
 
-.sobre-nos-img {
-    display: flex;
-    /* justify-content: end; */
-}
+/* .sobre-nos-img {
+    width: 50rem;
+} */
 
 .sobre-nos-img img {
-    border-bottom-left-radius: 0.625rem;
-    /* position: absolute; */
-    height: 688.0758226037196px;
-    max-height: 688.076;
-    width: 899px;
-    max-width: 899px;
+    object-fit: cover;
+    object-position: left;
+    border-bottom-left-radius: 0.2rem;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .img-sobre-nos-mobile {
