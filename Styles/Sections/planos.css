@@ -111,12 +111,13 @@
     font-weight: 400;
 }
 
-.outros-planos span {
+.outros-planos a {
+    color: #000;
     font-weight: 700;
     cursor: pointer;
 }
 
-.outros-planos span:hover {
+.outros-planos a:hover {
     text-decoration: underline;
 }
 
@@ -208,7 +209,7 @@
         margin-top: 1.5rem;
     }
 
-    .outros-planos span {
+    .outros-planos a {
         text-decoration: underline;
     }
 }
