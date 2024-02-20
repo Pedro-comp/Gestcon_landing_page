@@ -157,6 +157,7 @@
 .splide__slide p {
     text-align: center;
     margin: 1rem;
+    line-height: 120%;
     flex: 1;
 }
 
@@ -165,6 +166,12 @@
     width: 100%;
     justify-content: center;
     margin-bottom: 1rem;
+    margin-top: 0rem;
+}
+
+.import_arquivos p {
+    margin: 0;
+    margin-top: 1rem;
 }
 
 @media (max-width: 965px) {
@@ -175,7 +182,7 @@
 
 @media (max-width: 440px) {
     .section-funcionalidades {
-        margin-top: 1rem;
+        margin-top: 4rem;
     }
 
     .funcionalidades-title .spark-icon {
