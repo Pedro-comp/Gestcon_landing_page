@@ -78,10 +78,17 @@
 }
 
 @media (max-width: 440px) {
+
+    .section-sobre-nos {
+        margin: 1rem;
+        margin-top: 4rem;
+    }
+
     .sobre-nos-title {
         font-size: var(--mobile-title-size);
         text-align: left;
         font-weight: 500;
+        width: 100%;
     }
 
     .sobre-nos-container {

@@ -122,10 +122,8 @@
         grid-template-columns: 1fr;
         height: 50rem;
         padding: 0 1rem;
-    }
-
-    .contatos-div {
-        margin-left: 0;
+        margin-top: 4rem;
+        /* width: 100%; */
     }
 
     .contato-form-div p {
@@ -149,5 +147,13 @@
     .contatos-div h2 {
         font-size: var(--mobile-title-size);
         font-weight: 500;
+    }
+}
+
+@media (max-width: 320px) {
+    .contatos-div div p:last-child {
+        overflow-wrap: break-word;
+        word-break: break-all;
+        font-size: 150%;
     }
 }
