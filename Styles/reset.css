@@ -52,3 +52,7 @@ a {
 body {
     font-family: 'Outfit', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}

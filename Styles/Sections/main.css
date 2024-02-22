@@ -42,6 +42,11 @@
     color: var(--text-dark-purple);
 }
 
+.main-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .main-button img {
     margin-left: 5px;
     text-align: center;
