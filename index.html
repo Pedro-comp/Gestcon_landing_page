@@ -18,8 +18,12 @@
     <link rel="stylesheet" href="./Styles/Sections/import.css">
     <!-- SCRIPTS LINKS -->
     <script defer src="./Scripts/header_script.js"></script>
+<<<<<<< HEAD
     <script defer src="./Scripts/enviar_form.js"></script>
     <!-- <script defer src="./Scripts/contatos_script.js"></script> -->
+=======
+    <script defer src="./Scripts/contatos_script.js"></script>
+>>>>>>> bb305b13e714cf4162429365cece9925f6a37a7c
     
     <title>Gestcon - Gestão de Contratos</title>
 </head> 
@@ -30,30 +34,30 @@
         <img id="nome-gestcon-mobile" src="./Assets/images/nome-gestcon-mobile.png" alt="">
         <nav id="nav-header-menu">
             <ul class="header-list">
-                <li>Funcionalidades</li>
-                <li>Sobre Nós</li>
-                <li>Contato</li>
-                <li>Planos</li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#contatos">Contato</a></li>
+                <li><a href="#planos">Planos</a></li>
             </ul>
         </nav>
         <div class="button-container">
-            <a id="entrar-button" href="/">Entrar</a>
+            <a id="entrar-button" href="https://gestconp.com.br/login">Entrar</a>
             <img id="menu-icon" src="./Assets/icones-svg/menu.svg" alt="icone do menu" onclick="openNav()">
         </div>
 
         <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="fecharbtn" onclick="closeNav()">&times;</a>
-            <a href="#">Funcionalidades</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Contato</a>
-            <a href="#">Planos</a>
+            <a href="#funcionalidades" onclick="closeNav()">Funcionalidades</a>
+            <a href="#sobre-nos" onclick="closeNav()">Sobre Nós</a>
+            <a href="#contatos" onclick="closeNav()">Contato</a>
+            <a href="#planos" onclick="closeNav()">Planos</a>
         </div>
     </header>
     <section class="section-main">
         <h1 class="texto-principal">
             Fácil gerenciamento de projetos de qualquer complexidade.
         </h1>
-        <a class="main-button" href="/">
+        <a class="main-button" href="#contatos">
             <p>Entre em contato</p>
             <img src="./Assets/icones-svg/arrow-up-right.svg">
         </a>
@@ -61,7 +65,7 @@
         <img class="print-tela-main" src="./Assets/images/img-main.png" alt="Imagem sistema gestcon">
         <img class="print-tela-mobile" src="./Assets/images/print-tela-mobile.png" alt="imagem do sistema">
     </section>
-    <section class="section-funcionalidades">
+    <section class="section-funcionalidades" id="funcionalidades">
         <div class="funcionalidades-title">
             <h1>Descubra o poder do <span>Gestcon</span>.</h1>
             <img class="spark-icon" src="./Assets/icones-svg/spark.svg" alt="">
@@ -82,7 +86,7 @@
                     Obtenha insights instantâneos com os gráficos interativos do Gestcon, proporcionando uma análise de dados dinâmica e eficiente.
                 </p>
                 <div class="saiba-mais-div">
-                    <a href="/">Saiba mais</a>
+                    <a href="#contatos">Saiba mais</a>
                     <img src="Assets/icones-svg/seta-cima.svg" alt="">
                 </div>
             </div>
@@ -95,7 +99,7 @@
                     Simplifique o processo com a importação de arquivos no Gestcon. Agilize a entrada de dados e ganhe tempo para focar no que realmente importa.      
                 </p>
                 <div class="saiba-mais-div">
-                    <a href="/">Saiba mais</a>
+                    <a href="#conatos">Saiba mais</a>
                     <img src="Assets/icones-svg/seta-cima.svg" alt="">
                 </div>
             </div>
@@ -108,7 +112,7 @@
                     Simplesmente assine. O Gestcon oferece documentos jurídicos prontos para agilizar o processo. Eficiência em cada assinatura.     
                 </p>
                 <div class="saiba-mais-div">
-                    <a href="/">Saiba mais</a>
+                    <a href="#contatos">Saiba mais</a>
                     <img src="Assets/icones-svg/seta-cima.svg" alt="">
                 </div>
             </div>
@@ -121,7 +125,7 @@
                     Obtenha clareza instantânea com o panorama financeiro do Gestcon. Informações rápidas para uma gestão financeira eficaz.     
                 </p>
                 <div class="saiba-mais-div">
-                    <a href="/">Saiba mais</a>
+                    <a href="#contatos">Saiba mais</a>
                     <img src="Assets/icones-svg/seta-cima.svg" alt="">
                 </div>
             </div>
@@ -187,7 +191,7 @@
               </div>
         </div>
     </section>
-    <section class="section-sobre-nos">
+    <section class="section-sobre-nos" id="sobre-nos">
         <h1 class="sobre-nos-title">Sobre nós</h1>
         <div class="sobre-nos-container">
             <div class="left-container">
@@ -198,7 +202,7 @@
                     A CodeCrafts é uma equipe apaixonada e dedicada, especializada em desenvolver soluções tecnológicas inovadoras. Nosso trabalho ganha vida no Gestcon, um sistema avançado de gestão de contratos que simplifica e aprimora os processos empresariais.
                 </p>
                 <img class="img-sobre-nos-mobile" src="./Assets/images/img-sobrenos-mobile.jpg" alt="tela do sistema gestcon">
-                <a href="/">
+                <a href="#contatos">
                     Entre em contato
                 </a>
             </div>
@@ -213,11 +217,19 @@
         <h1>Gestcon: Elevando a gestão de contratos para novos patamares. Descomplique, inove, alcance o sucesso empresarial.</h1>
         <img src="./Assets/images/logo-gestcon-cinza.png" alt="logo gestcon">
     </section>
-    <section class="section-contatos">
+    <section class="section-contatos" id="contatos">
         <div class="contato-form-div">
             <p>Fique à vontade para nos contatar.</p>
+<<<<<<< HEAD
             <form class="contato-form" id="meuFormulario">
                 <!-- <input type="hidden" name="_captcha" value="false"> -->
+=======
+            <form 
+            action="https://formsubmit.co/pnoleto11@gmail.com" 
+            method="POST" 
+            data-form
+            class="contato-form">
+>>>>>>> bb305b13e714cf4162429365cece9925f6a37a7c
                <div class="user-box">
                    <input type="text" name="nome" id="nome" required>
                    <label for="nome">Nome</label>
@@ -230,7 +242,11 @@
                     <textarea name="mensagem" id="mensagem" cols="1" rows="1" required=""></textarea>
                     <label for="mensagem">Escreva sua mensagem</label>
                </div>
+<<<<<<< HEAD
                <button data-button class="submit-button" type="submit" onclick="enviarFormulario()">Enviar</button>
+=======
+               <button data-button class="submit-button" type="submit">Enviar</button>
+>>>>>>> bb305b13e714cf4162429365cece9925f6a37a7c
             </form>
         </div>
         <div class="contatos-div">
@@ -245,7 +261,7 @@
             </div>
         </div>
     </section>
-    <section class="section-planos">
+    <section class="section-planos" id="planos">
         <h1>Nossos Planos</h1>
         <div class="planos-cards">
             <div class="planos-card">
@@ -289,7 +305,7 @@
                         <p>mensal</p>
                     </div>
                 </div>
-                <a class="assinar-button" href="">Assinar agora</a>
+                <a class="assinar-button" href="#contatos">Assinar agora</a>
             </div>
             <div class="planos-card">
                 <div class="card-title">
@@ -332,11 +348,11 @@
                         <p>mensal</p>
                     </div>
                 </div>
-                <a class="assinar-button" href="">Assinar agora</a>
+                <a class="assinar-button" href="#contatos">Assinar agora</a>
             </div>
         </div>
         <h2 class="outros-planos">
-            Caso sua empresa ultrapasse os 100 contatos anuais, <span>contate-nos!</span> Acharemos a melhor solução para sua empresa.
+            Caso sua empresa ultrapasse os 100 contatos anuais, <a href="#contatos">contate-nos!</a> Acharemos a melhor solução para sua empresa.
         </h2>
     </section>
     <footer>
