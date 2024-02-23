@@ -36,4 +36,24 @@ footer div p:first-child {
     margin-right: 0.5rem;
 }
 
+@media (max-width: 440px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 35%;
+        padding: 1rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .footer_wpp,
+    .footer_email {
+        font-size: 1.2rem;
+        justify-content: center;
+    }
+}
 
