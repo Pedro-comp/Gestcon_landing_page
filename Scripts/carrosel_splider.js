@@ -9,6 +9,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         height: '300px',
         gap: 12,
         arrows: false,
+        padding: '1rem'
     } );
     splide.mount();
 } );

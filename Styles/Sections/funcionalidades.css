@@ -116,6 +116,11 @@
     padding: 2rem;
 }
 
+.splide__list {
+    margin: 2rem 2rem;
+    padding: 2rem 2rem;
+}
+
 .splide__slide {
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
@@ -123,9 +128,10 @@
     -moz-box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.15);
     box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.15);
     text-align: center;
-
+    
     display: flex;
     flex-direction: column;
+    /* margin: 1rem 1rem; */
 }
 
 .pagination-dot:is(.is-active) {
