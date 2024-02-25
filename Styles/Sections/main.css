@@ -1,3 +1,10 @@
+/* svg:hover {
+    fill: red;
+} */
+
+
+
+
 .section-main {
     display: grid;
     justify-items: center;
@@ -42,6 +49,14 @@
     color: var(--text-dark-purple);
 }
 
+.main-button:hover svg path {
+    fill: var(--text-dark-purple);
+}
+
+/* .main-button:hover {
+    
+} */
+
 .main-button a {
     color: #fff;
     text-decoration: none;
@@ -70,7 +85,7 @@
 
     .texto-principal {
         margin-top: 5rem;
-        font-size: 2rem;
+        font-size: var(--mobile-title-size);
         line-height: 120%;
         text-align: left;
         margin-left: 0;
