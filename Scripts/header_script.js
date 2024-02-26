@@ -31,12 +31,14 @@ aplicar_estilos();
 
 window.addEventListener('resize', aplicar_estilos)
 
-/* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("sidenav").style.width = "18rem";
+    document.getElementById("sidenav").style.width = "80%";
+    document.getElementById("closeNavFora").style.width = "20%" 
+    document.getElementById("closeNavFora").style.height = "100vh" 
 }
-  
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
+
+function closeNav() {
     document.getElementById("sidenav").style.width = "0";
+    document.getElementById("closeNavFora").style.width = "0";
+    document.getElementById("closeNavFora").style.height = "0" 
 }
