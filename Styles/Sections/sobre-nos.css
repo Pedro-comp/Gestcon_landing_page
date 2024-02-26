@@ -132,6 +132,7 @@
     .img-sobre-nos-mobile {
         display: block;
         width: 100%;
+        /* width:  376px; */
         margin-top: 1rem;
     }
 }
