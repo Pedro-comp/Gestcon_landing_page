@@ -1,65 +1,44 @@
-class FormSubmit {
-    constructor(settings) {
-        this.settings = settings;
-        this.form = document.querySelector(settings.form);
-        this.formButton = document.querySelector(settings.button);
-        if (this.form) {
-            this.url = this.form.getAttribute("action");
-        }   
-        this.sendForm = this.sendForm.bind(this);
-    }
+function enviaEmail() {
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var mensagem = document.getElementById("mensagem").value;
 
-    displaySuccess() {
-        this.form.innerHTML = this.settings.success;
-    }
+    var form = document.getElementById("meuFormulario");
 
-    displayError() {
-        this.form.innerHTML = this.settings.error;
-    }
+    var msgBody = "Nome: " + nome + "<br />Email: " + email + "<br />Mensagem: " + mensagem;
 
-    getFormObject() {
-        const formObject = {};
-        const fields = this.form.querySelector("[name]");
-        fields.forEach((field) => {
-            formObject[field.getAttribute("name")] = field.value;
-        })
-        return formObject;
-    }
+    Email.send({
+        SecureToken: "eb21ea98-3b73-4f86-82d7-1fdd2e28f6f4",
+        To : 'atendimento@gestconp.com.br',
+        From : "atendimento@gestconp.com.br",
+        Subject : "Email de contato Gestcon",
+        Body : msgBody
+    }).then(function(response) {
+        console.log(response);
+        
+        if(response === "OK") {
+            console.log("Email enviado com sucesso!");
+            let msgEmail = document.createElement("p");
+            var msgEmailTxt = document.createTextNode("Email enviado com sucesso!");
+            msgEmail.appendChild(msgEmailTxt);
 
-    onSubmission(event) {
-        event.preventDefault();
-        event.target.disabled = true;
-        event.target.innerText = "Enviando...";
-    }
-
-    async sendForm(event) {
-        try {
-            this.onSubmission(event);
-            await fetch(this.url, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "aplication/json",
-                    Accept: "aplication/json"
-                },
-                body: JSON.stringify(this.getFormObject()),
-            });
-            this.displaySuccess()
-        } catch (error) {
-            this.displayError();
-            throw new Error(error)
+            let divMsgEmail = document.getElementById("email_enviado");
+            divMsgEmail.appendChild(msgEmail);
+        } else {
+            console.log("Erro ao enviar email: ", response);
         }
-    }
-
-    init() {
-        if (this.form) this.formButton.addEventListener("click", () => this.sendForm);
-        return this;
-    }
+    })
+    
+    form.reset()
 }
 
-const formSubmit = new FormSubmit({
-    form: "[data-form]",
-    button: "[data-button]",
-    success: "<h1 class='sucess'>Mensagem enviada!</h1>",
-    error: "<h1 class='error'>Não foi possível enviar a sua mensagem</h1>"
-});
-formSubmit.init()
+
+const submit = document.getElementById("submitButton");
+
+submit.addEventListener("click", SubmitClick, false);
+
+function SubmitClick(event) {
+    event.preventDefault();
+
+    enviaEmail();
+}

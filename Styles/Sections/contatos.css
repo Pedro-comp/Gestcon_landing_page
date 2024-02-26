@@ -1,7 +1,7 @@
 .section-contatos {
     padding: 0 8rem;
     /* width: 100%; */
-    height: 30rem;
+    height: 32rem;
     background-color: var(--primary-color);
     color: white;
     display: grid;
@@ -115,6 +115,13 @@
     background-color: var(--primary-color);
     color: #fff;
     border: 2px solid #fff;
+}
+
+#email_enviado p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    /* text-align: center; */
+    margin-top: 1rem;
 }
 
 @media (max-width: 440px) {
